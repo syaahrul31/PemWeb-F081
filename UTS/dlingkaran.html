@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Presence Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span> </h1>
+                    <ul>
+                        <li class="menu"><a href="home2.html">Home</a></li>
+                        <li class="menu">
+                            <div class="dropdown">
+                                <button class="drpbtn" style="border: 0; padding: 0; margin: 0;">
+                                    <a href="akun.html"> Presence <i class="fas fa-caret-down"></i></a>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="dbatang.html" >Bar Chart</a>
+                                    <a href="dlingkaran.html" >Pie Chart</a>
+                                    <a href="akun.html" >User Account</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu"><a href="developer2.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten_rekap">
+                    <h1 class="judul_rekap">Pie Chart</h1>
+                    <div class="bgdiag">
+                        <div class="diag">
+                            <br><h4 style="color: bisque;">Employee Attendance Chart</h4><br>
+                            <table>
+                                <tr>
+                                    <td><canvas id="myChart"></canvas></td>
+                                    <td><canvas id="myChart2"></canvas></td>
+                                    <td><canvas id="myChart3"></canvas></td>
+                                </tr>
+                            </table>
+                        </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="chart2.js"></script>
+</body>
+</html>

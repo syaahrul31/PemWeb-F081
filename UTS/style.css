@@ -1,0 +1,419 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Background */
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    animation: animasi 10s ease-in-out infinite;
+    background-size: cover;
+}
+
+@keyframes animasi {
+    0%, 100%{
+        background-image: url(1.jpg);
+    }
+    50%{
+        background-image: url(2.jpg);
+    }
+    75%{
+        background-image: url(3.jpg);
+    }
+    
+}
+.layer{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* 1. Navbar */
+.navigasi{
+    width: 100%;
+    /* background-image: linear-gradient(#12C4BA, #5CC6BD);  */
+    position: absolute;
+    /* position: -webkit-sticky;     */
+}
+.navbbar{
+    width: 1170px;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.navbbar .logo{
+    font-family: 'Lexend', sans-serif;
+    font-size: 30px;
+    line-height: 60px;
+    margin-left: 10px;
+    color: white;
+}
+
+span{
+    color: rgb(32, 255, 218);
+}
+
+.navbbar ul li{
+    display: inline-block;
+    line-height: 50px;
+}
+
+.navbbar ul li a{
+    font-family: 'Open Sans', sans-serif;
+    padding: 10px 16px;
+    font-size: 18.65px;
+    font-weight:550;
+    text-decoration: none;
+    color: #dddddd;
+    float: left;
+    /* border-radius: 30px; */
+}
+
+.navbbar ul li a:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+/* Untuk Umum */
+.konten{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin: 20px auto;
+}
+
+.konten1 .judul_beranda{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+}
+
+.konten1 ul li{
+    margin-top: 40px;
+    padding-left: 10px;
+    display: inline-block;
+}
+
+.konten1 ul li a{
+    font-family: 'Open Sans', sans-serif;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight:bold;
+    background-color: rgba(32, 255, 218, 0.438);
+    color: rgb(255, 255, 255);
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.konten1 ul li a:hover{
+    background-color: rgba(32, 255, 218, 0.7);
+    color: black;
+}
+
+
+/* 4. CHECK IN */
+.konten_checkin{
+    background-color: rgba(0, 0, 0, 0.7);
+    width:380px;
+    height:550px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.konten_checkin h1{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 35px;;
+    margin: 10px;
+}
+
+.konten_checkin .input_field{
+    width: 85%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 10px 0;
+    color: white;
+}
+.konten_checkin #laki, #perempuan{
+    width: 40%;
+    color: whitesmoke;
+    /* justify-content: space-around; */
+}
+.konten_checkin .btn_form2{
+    display: block;
+    width: 85%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #f3c693;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto;
+}
+
+
+/* 5. Developer */
+table{
+    color: white;
+    font-size: 12px;
+    text-align: left;
+    font-family: 'Lexend', sans-serif;
+}
+
+#tabelregist{
+    margin-left: 20px;
+    width: 250px;
+    color: wheat;
+}
+
+.develop{
+    background-color: rgba(0, 0, 0, 0.4);
+    color: #dddddd;
+    font-family: 'Lexend';
+    width: 600px;
+    height: 590px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+.develop1{
+    margin-left: 90px;
+    margin-right: 90px;
+}
+
+.biotab{
+    background-image: linear-gradient(rgb(78, 78, 78), rgb(88, 87, 87));
+    border-radius: 10px;
+    /* height: ; */
+    margin-top: 7px;
+}
+
+.tabel1, .tabel2, .tabel3{
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+table tr td{
+    padding-left: 20px;
+    font-family: 'Lexend', sans-serif;
+}
+
+/* 3. LOGIN */
+
+.konten_login{
+    background-color: rgba(0, 0, 0, 0.8);
+    width:380px;
+    height:400px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.konten_login h1{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 35px;;
+    margin: 10px;
+}
+.konten_login .input_field{
+    width: 85%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 20px 0;
+    color: white;
+}
+
+.konten_login .btn_form{
+    display: block;
+    width: 85%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #f3c693;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto;
+}
+
+/* 4. Sign Up */
+.konten_register{
+    background-color: rgba(0, 0, 0, 0.8);
+    width:380px;
+    height:450px;
+    margin: 0px auto;
+    padding: 15px;
+}
+.konten_register h1{
+    color: whitesmoke;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 35px;;
+    margin: 10px;
+}
+
+.konten_register .input_field{
+    width: 85%;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    border-bottom: 1px solid grey;
+    outline: none;
+    background: transparent;
+    font-size: 15px;
+    padding: 8px 0;
+    margin: 10px 0;
+    color: white;
+}
+.konten_register #laki, #perempuan{
+    width: 40%;
+    color: whitesmoke;
+    /* justify-content: space-around; */
+}
+.konten_register .btn_form2{
+    display: block;
+    width: 85%;
+    padding: 15px;
+    border: 0;
+    outline: 0;
+    border-radius: 30px;
+    background-color: #f3c693;
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px auto;
+}
+
+
+/* Dropdown */
+.menu .dropdown{
+    float: left;
+    /* overflow: hidden; */
+    line-height: 0;
+}
+
+.menu .dropdown-menu{
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.menu .dropdown .drpbtn{
+    background-color: transparent;
+    color: #dddddd;
+    border: 0;
+    outline: none;
+    line-height: 50px;
+}
+
+.menu .dropdown-menu a{
+    float: none;
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    line-height: 40px;
+}
+
+.menu .dropdown-menu a:hover{
+    background-color: #ddd;
+}
+
+.menu .dropdown:hover .dropdown-menu{
+    display: block;
+}
+
+/*profil*/
+.judul_profil{
+    color: #dddddd;
+    font-family: 'Lexend', sans-serif;
+    font-size: 50px;
+}
+
+/* diagram */
+.judul_rekap{
+    color: #dddddd;
+    font-family: 'Lexend', sans-serif;
+    font-size: 40px;
+}
+
+/*AKUN*/
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+.form-popup {
+    display:none;
+    position:fixed;
+    bottom: 0px;
+    right: -150px;
+    border: 1px solid #f1f1f1;
+    z-index: 9;
+  }
+
+.tblakun{
+    width:900px;
+    font-size: 12px;
+    text-align: left;
+    background-color: rgba(10, 10, 10, 0.63);
+}
+
+.tblakun tr th{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.butdelete{
+    color: white;
+    background-image: linear-gradient(red,rgb(233, 29, 15));
+    width: 70px; height:30px;
+    padding: 15px auto;
+    font-weight: bold;
+    border:none;
+}
+.butedit{
+    color: white;
+    background-image: linear-gradient(rgb(20, 182, 47), rgb(11, 201, 58));
+    width: 70px; height:30px;
+    font-weight: bold;
+    padding: 15px auto;
+    border:none;
+}
+.btnedit{
+    color: white;
+    background-image: linear-gradient(rgb(182, 144, 20), rgb(201, 188, 11));
+    width: 70px; height:30px;
+    padding: 15px auto;
+    font-weight: bold;
+    border:none;
+}

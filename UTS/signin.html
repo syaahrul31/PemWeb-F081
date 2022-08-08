@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a97fb26b82.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span> </h1>
+                    <ul>
+                        <li class="menu"><a href="home.html">Home</a></li>
+                        <li class="menu"><a href="developer.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten_login">
+                    <h1>Sign In</h1>
+                    <div class="formulir">
+                        <form id="formlogin" onsubmit="signin()" autocomplete="off">
+                            <input type="text" class="input_field" placeholder="Enter Username" id="username_login" required>
+                            <input type="password" class="input_field" placeholder="Enter Password" id="password_login" minlength="8" maxlength="8" required>
+                            <p id="validasi2" style="color: red;"></p>
+                            <input type="submit"name="Submit" id="kesubmit" class="btn_form">
+                        </form>
+                        <p style="color:rgb(179, 179, 179);">Don't have an account yet?  <a href="signup.html" style="color:rgb(0, 81, 255);text-decoration: none;">Sign Up</a></p>
+                        <!-- <p style="color:rgb(179, 179, 179);">Forgot password?  <a href="https://wa.me/6283127605430" style="color:rgb(0, 81, 255);text-decoration: none;">ask admin</a></p> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   
+    <script src="script.js"></script>
+</body>
+</html>

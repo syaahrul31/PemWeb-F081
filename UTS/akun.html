@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/xlsx@0.15.1/dist/xlsx.full.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf-autotable/3.5.6/jspdf.plugin.autotable.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Presence Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span> </h1>
+                    <ul>
+                        <li class="menu"><a href="home2.html">Home</a></li>
+                        <li class="menu">
+                            <div class="dropdown">
+                                <button class="drpbtn" style="border: 0; padding: 0; margin: 0;">
+                                    <a href="akun.html"> Presence <i class="fas fa-caret-down"></i></a>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="dbatang.html" >Bar Chart</a>
+                                    <a href="dlingkaran.html" >Pie Chart</a>
+                                    <a href="akun.html" >User account</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu"><a href="developer2.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten_profil">
+                    <h2 class="judul_rekap">Record Presence</h2>
+                    <img src="diagram.png" alt="diagam" name="diagram" width="200">
+                    <div class="form-popup" id="myForm">
+                        <form action="" class="konten_register" autocomplete="off">
+                            <h1>Update Data</h1>
+                            <input type="email" class="input_field" placeholder="Enter Email" id="email" required>
+                            <input id="txtId" type="hidden">
+                            <input type="text" class="input_field" placeholder="Enter Name" id="name" required>
+                            <select id="position" class="input_field" style="background-color: rgba(56, 56, 56, 0.8);" required> 
+                                <option>Enter Position</option>
+                                <option value="Karyawan">Karyawan</option>
+                                <option value="HRD">HRD</option>
+                                <option value="Manajer">Manajer</option>
+                                <option value="Sekretaris">Sekretaris</option>
+                              </select>
+                              <select id="shift" class="input_field" style="background-color: rgba(56, 56, 56, 0.8);"> 
+                                <option value="Enter Shift">Enter Shift</option>
+                                <option value="Pagi">Pagi</option>
+                                <option value="Siang">Siang</option>
+                                <option value="Sore">Sore</option>
+                                <option value="Malam">Malam</option>
+                            </select>
+                            <input type="date" class="input_field" placeholder="Enter Date" id="date" required><br><br>
+            
+                          <button type="submit" class="btnedit" id="btnSubmit">Update</button>
+                          <button type="button" class="btnedit" onclick="closeForm()">Close</button>
+                        </form>
+                    </div>
+                    <div>
+                        <table id="luaran" class="tblakun" border="1" cellspacing="0" cellpadding="10">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Email</th>
+                                    <th>Name</th>
+                                    <th>Position</th>
+                                    <th>Shift</th>
+                                    <th>Date</th>
+                                    <th class="text-center">Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table><br>
+                        <button class="butedit" onclick="ExportToExcel('xlsx')">EXCEL</button>
+                        <button class="butdelete" onclick="generatePDF()">PDF</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="convert.js"></script>
+</body>
+</html>

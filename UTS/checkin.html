@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/a97fb26b82.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Check In</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span> </h1>
+                    <ul>
+                        <li class="menu"><a href="home.html">Home</a></li>
+                        <li class="menu"><a href="developer.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten_checkin">
+                    <h1>Check In</h1><br>
+                    <div class="formulir2">
+                        <form id="formcheck" onsubmit="" autocomplete="off">
+                            <img src="check.png" alt="" width="50">
+                            <input type="email" class="input_field" placeholder="Enter Email" id="email" required>
+                            <input id="txtId" type="hidden">
+                            <input type="text" class="input_field" placeholder="Enter Name" id="name" required>
+                            <select id="position" class="input_field" style="background-color: rgba(56, 56, 56, 0.8);"> 
+                                <option>Enter Position</option>
+                                <option value="Karyawan">Karyawan</option>
+                                <option value="HRD">HRD</option>
+                                <option value="Manajer">Manajer</option>
+                                <option value="Sekretaris">Sekretaris</option>
+                              </select>
+                              <select id="shift" class="input_field" style="background-color: rgba(56, 56, 56, 0.8);"> 
+                                <option>Enter Shift</option>
+                                <option value="Pagi">Pagi</option>
+                                <option value="Siang">Siang</option>
+                                <option value="Sore">Sore</option>
+                                <option value="Malam">Malam</option>
+                            </select>
+                            <input type="date" class="input_field" placeholder="Enter Date" style="background-color: rgba(56, 56, 56, 0.8);" id="date" required>
+                            <div>
+                                <button type="submit" id="btnSubmit" class="btn_form2">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Sign Up</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span> </h1>
+                    <ul>
+                        <li class="menu"><a href="home.html">Home</a></li>
+                        <li class="menu"><a href="developer.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten_register">
+                    <h1>Sign Up</h1>
+                    <div class="formulir2">
+                        <form id="formregis" onsubmit="signup()" autocomplete="off">
+                            <input type="email" class="input_field" placeholder="Enter Email" id="email" required>
+                            <input type="text" class="input_field" placeholder="Enter Username" id="username" required>
+                            <input type="password" class="input_field" placeholder="Enter Password" id="password" minlength="8" maxlength="8" required>
+                            <input type="password" class="input_field" placeholder="Konfirmasi Password" id="password2" minlength="8" maxlength="8" required><br>
+                            <p id="validasi1" style="color: red;"></p>
+                            <input type="submit" name="Submit" class="btn_form2">
+                        </form>
+                        <p style="color:rgb(179, 179, 179);">Already have an account? <a href="signin.html" style="color:rgb(0, 81, 255);text-decoration: none;">Sign In</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

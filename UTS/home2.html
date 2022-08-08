@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" 
+    integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <title>Home Page</title>
+</head>
+<body>
+    <div class="container">
+        <div class="layer">
+            <div class="navigasi">
+                <div class="navbbar">
+                    <h1 class="logo">App<span>Sen</span></h1>
+                    <ul>
+                        <li class="menu"><a href="home2.html">Home</a></li>
+                        <li class="menu">
+                            <div class="dropdown">
+                                <button class="drpbtn" style="border: 0; padding: 0; margin: 0;">
+                                    <a href="akun.html"> Presence <i class="fas fa-caret-down"></i></a>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a href="dbatang.html" >Bar Chart</a>
+                                    <a href="dlingkaran.html" >Pie Chart</a>
+                                    <a href="akun.html" >User Account</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu"><a href="developer2.html">Development</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="konten">
+                <div class="konten1">
+                    <h1 class="judul_beranda" style="font-size:40px;">Welcome <span>ADMIN</span></h1>
+                    <h2 class="judul_beranda">Employee Attendance Recapitulation Application</h2><br>
+                    <p style="color: rgb(177, 175, 175); margin-top: 8px; font-size: 12px;">Hi employees, Company six has now launched a web-based attendance system that can be accessed by all employees easily. Login now to get your presence.</p><br>
+                    <ul>
+                        <li class="menu"><a href="home.html" onclick="logout();">Sign Out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>   
+    <script src="script.js"></script>
+</body>
+</html>
