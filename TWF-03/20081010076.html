@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pola Segitiga</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap');
+        .judul{
+            text-align: center;
+        }
+        .tabel{
+            background-image:linear-gradient(rgb(14, 129, 138), rgb(14, 128, 143));
+            font-family: 'Nunito Sans', sans-serif;
+            color: aliceblue;
+            width: 300px;
+            border-radius: 5%;
+            box-shadow: 5px 5px 5px rgba(53, 28, 28, 0.356);
+        }
+        #tinggi{
+            padding: 12px 0px 12px 30px;
+            margin:10px 30px 10px 30px;
+            width: 200px;
+            border-radius: 20px;
+            border:none;
+        }
+        #submit{
+            background-color:rgb(39, 39, 39);
+            color:white;
+            font-weight: bolder;
+            padding: 15px 93px;
+            border:none;  
+            border-radius: 25px;
+            margin-left: 30px;
+        }
+        #submit:hover{
+            transition: 0.5s;
+            color: black;
+            background-color: rgb(163, 255, 232);
+        }
+        #gmbr:hover{
+            transform: rotate(360deg);
+            transition: 2s;
+        }
+        .tamp{
+            padding: 10px;	
+	        position: relative;
+	        border: 1px solid #0000001f;
+	        border-radius: 20px;
+        }
+        #hasil3, #hasil4{
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <table class="tabel">
+        <form id="form">
+            <tr class="judul">
+                <td>
+                    <h1>Pola Segitiga</h1>
+                    <img id="gmbr" src="rect.png" alt="triangle"width="130px">
+                    <hr width="200">
+                </td>
+            </tr>
+            <tr><td>
+                <input type="number" id="tinggi" name="tinggi" placeholder="input tinggi (max.100).." max="100" required><br>
+                <input type="submit" id="submit" name="submit"><br><br>
+            </td></tr>
+        </form>
+    </table>
+    <br><br>
+    <h2>Hasil :</h2>
+    <div class="tamp">
+        <p id="hasil1">...</p><hr>
+        <p id="hasil2">...</p><hr>
+        <p id="hasil3">...</p><hr>
+        <p id="hasil4">...</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
