@@ -1,0 +1,116 @@
+body{
+    background-image: url(bg.jpg);
+    background-size: 1400px;
+}
+.header{
+    color: aliceblue;
+    background-color: rgba(165, 42, 42,.95);
+    width:1200px; height: 70px;
+    margin:auto;
+}
+.logo{
+    width: 30px;
+    margin: 12px 20px 45px 50px;
+}
+.judul{
+    font-size: 35px;
+    margin: 6px 0px 41px 0px;
+    font-family: "philosopher";
+}
+nav{
+    background-color: rgba(31, 31, 31, .95);
+    width:1200px; height:30px;
+    margin:auto;
+}
+.tabel{
+    margin-left: 140px;
+}
+a{
+    color: bisque;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 11px;
+}
+.foto{
+    width:40px;
+    border-radius: 100px;
+    margin: 6px 0px 37px 0px;
+}
+div.nama{
+    margin: 0px 13px 47px 650px;
+    font-family: "arial black";
+    text-align: right;
+    font-size:10px;
+}
+.status{
+    color: rgb(255, 243, 174);
+}
+.login{
+    margin: 0px 20px 0px 540px;
+}
+.navi :hover{
+    color:red;
+}
+.konten{
+    background-color: rgba(161, 243, 198, 0.4);
+    margin-top: 5px;
+    height:520px;
+    color: bisque;
+}
+.bio{
+    font-size: 35px;
+    margin-left: 20px;
+}
+.tabelkonten{
+    width:1000px;
+    height: 10px;
+    margin: auto;
+    background-color: rgba(41, 37, 48,4);
+    
+}
+h6{
+    color:bisque;
+    text-align: center;
+    font-family: "arial black";
+    margin-top: 0px;
+    padding-top: 10px;
+    height: 30px;
+    background-color: brown;
+}
+.isi{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 80px;
+}
+.isi2{
+    font-size: 13px;
+    margin-left: 15px;
+    margin-right: 30px;
+    width:70px;
+}
+.about{
+    margin-top: -50px;
+}
+.fotsrul{
+    margin:30px 50px 30px 50px;
+    border-radius: 1000px;
+}
+p{
+    text-align: justify;
+}
+.footer{
+    color:bisque;
+    font-family: "arial black";
+    font-size: 10px;
+    text-align: center;
+    background-color: rgba(165, 42, 42, .9);
+    margin-bottom: 30px;
+    width:1200px;
+}
+.ig{
+    margin-left:-50px;
+    margin-left:-50px;
+}
+
