@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width", initial-scale="1.0">
+        <title>Welcome to my Webs!</title>
+        <link rel="stylesheet" href="style2.css">
+    </head>
+    <body>
+        <header>
+            <div id="head">
+            <table id="tabel1">
+                <img id="logo" src="logo.png" alt="" title="sample" width="25">
+                <tr><td>
+                    <h1 id="judul"><p><strong>iniwebsite.com</strong></p></h1>
+                </td><td>
+                    <img src="zoom.png" alt="" width="20px">
+                </td><td>
+                    <input type="search" placeholder="search..">
+                </td><td>
+                    <a class="reg" href="#">Log in</a>
+                </td><td>
+                    <a class="reg" href="#sidebar">Sign up</a>
+                </td></tr>
+                <tr><td>
+                    <img class="foto" src="srul.jpg" alt="" width="200">
+                </td><td colspan="4">
+                    <p class="halo"><strong>Hi, Everyone!</strong><br>
+                        <span style="font-size:22px">Welcome to my website :)</span>
+                    </p>
+                </td></tr>
+            </table>
+        </div>
+        </header>
+
+
+
+        <nav>
+            <table id="tabel2">
+                <tr><ul>
+                        <td class="list"><a href="#head"><li>Home</li></a></td>
+                        <td class="list"><a href="#sidebar"><li>Profile</li></a></td>
+                        <td class="list"><a href="#keporto"><li>Portfolio</li></a></td>
+                        <td class="list"><a href="#ig"><li>Contact</li></a></td>
+                </ul></tr>
+            </table>
+        </nav>
+
+
+        
+        <main>
+            <h1 id="keprofile"><strong>My Profile</strong></h1>
+            <article>
+                <table id="tabel3">
+                    <tr>
+                        <td class="deskripsi" rowspan="8">
+                            <p><b>Deskripsi :</b><br>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique beatae delectus error perferendis praesentium fugiat quae cumque id facere iste. Deleniti veniam asperiores, temporibus, laboriosam odio aut reprehenderit, culpa dolor alias placeat natus. Ullam animi culpa eaque deleniti, ut inventore minus? Quae, soluta. Assumenda blanditiis ab, cupiditate eum quisquam earum officia nemo maxime numquam nisi aliquam voluptatem fuga odit ipsum. Delectus eaque eveniet at quo similique accusantium quisquam distinctio voluptas?</p></td>
+                        <td rowspan="8" align="center">
+                            <img id="fotoprofil" src="srul2.JPG" alt="" width="150" height="260"></td>
+                        <td><p class="profil">Nama :</p></td>
+                        <td><p class="profil">Syahrul Hidayat</p></td>
+                    </tr><tr>
+                        <td><p class="profil">NPM :</p></td>
+                        <td><p class="profil">20081010076</p></td>
+                    </tr><tr>
+                        <td><p class="profil">TTL :</p></td>
+                        <td><p class="profil">Sidoarjo, 04 Mei 2002</p></td>
+                    </tr><tr>
+                        <td><p class="profil">Alamat :</p></td>
+                        <td><p class="profil">JL. Abdul Rachman 177 Sedati</p></td>
+                    </tr><tr>
+                        <td><p class="profil">Status :</p></td>
+                        <td><p class="profil">Mahasiswa</p></td>
+                    </tr><tr>
+                        <td><p class="profil">Fakultas :</p></td>
+                        <td><p class="profil">Ilmu Komputer</p></td>
+                    </tr><tr>
+                        <td><p class="profil">Jurusan :</p></td>
+                        <td><p class="profil">Informatika</p></td>
+                    </tr><tr>
+                        <td><p class="profil">Universitas :</p></td>
+                        <td><p class="profil">UPN Veteran Jawa Timur</p></td>
+                    </tr>
+                </table>
+            </article><br>
+            <hr width="900" color="grey">
+            <h1 id="keporto"><strong>Portfolio</strong></h1>
+            <article>
+                <table id="tabel4">
+                    <tr><td>
+                        <figure>
+                        <img class="porto" src="porto1.jpg" alt="jpg" width="280">
+                        <figcaption><p align="center"><b>Poster Bela Negara bertema Kesehatan</b></p></figcaption>
+                        </figure>
+                    </td><td>
+                        <figure>
+                        <video class="porto" width="280" controls>
+                            <source src="porto2.mp4" type="video/mp4">
+                        </video>
+                        <figcaption align="center"><p><b>Doa di awal bulan Rajab</b></p></figcaption>
+                        </figure>
+                    </td><td>
+                        <figure>
+                        <img class="porto" src="porto3.jpg" alt="jpg" width="280">
+                        <figcaption><p align="center"><b>Prospek kerja desain grafis</b></p></figcaption>
+                        </figure>
+                    </td></tr>
+                </table>
+            </article>
+            <br><br><br><br>
+        </main>
+      
+
+        <div id="sidebar">
+        <aside>
+            <br>
+            <table id="tabel5">
+                <tr><td>
+                <form>
+                    <h2 id="regis">Register</h2>
+                    <label class="list2" for="nama">Nama</label><br>
+                    <input id="nama" type="name" placeholder="input nama.." required><br>
+                    <label class="list2" for="npm">NPM</label><br>
+                    <input id="npm" type="number" placeholder="input npm.."><br>
+                    <label class="list2" for="email">E-mail</label><br>
+                    <input id="email" type="mail" placeholder="example@gmail.com" required><br>
+                    <label class="list2" for="pw">Password</label><br>
+                    <input id="pw" type="password" placeholder="input password" required><br>
+                    <label class="list2"for="ttl">TTL</label><br>
+                    <input id="ttl" type="date" min="2000-01-01" max="2025-12-30" required><br><br>
+                    <button ><strong>Submit</strong></button><br><br><br>
+                </form>
+                </td></tr>
+            </table><br>
+            <details>
+                <summary><strong>Contact me :</strong></summary>
+                <summary>
+                    <a id="ig" href="https://www.instagram.com/syaahrul31_/">
+                        <img src="ig.png" alt="" width="53px" title="@syaahrul31_">
+                    </a>
+                    <img src="fb.png" alt="" width="50px">
+                    <img src="em.png" alt="" width="65px">
+                </summary>
+            </details>
+        </aside>
+        </div>
+       
+        
+
+        <footer>
+            <a href="#logo">&copy;2022 iniwebsite</a>
+        </footer>
+    </body>
+</html>
